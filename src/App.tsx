@@ -115,31 +115,31 @@ export default function App() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="flex flex-col gap-12 items-center max-w-4xl mx-auto w-full"
+              className="flex flex-col gap-12 items-center max-w-5xl mx-auto w-full"
             >
-              {/* Top: Visuals (Conditional) */}
+              {/* Top: Visuals (Always on top) */}
               {activeSubsection.image && (
-                <div className="relative w-full">
-                  <div className="relative aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
+                <div className="relative w-full group">
+                  <div className="relative aspect-video sm:aspect-[21/9] lg:aspect-[21/9] rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white transition-transform duration-500 group-hover:scale-[1.01]">
                     <img 
                       src={activeSubsection.image} 
                       alt={activeSubsection.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                    <div className="absolute bottom-8 left-8 p-4 bg-white/80 backdrop-blur-md rounded-2xl border border-white">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    <div className="absolute bottom-8 left-8 p-4 bg-white/90 backdrop-blur-md rounded-2xl border border-white shadow-lg">
                       <activeSubsection.icon className="w-8 h-8 text-purple-600" />
                     </div>
                   </div>
                   {/* Decorative blobs */}
-                  <div className={cn("absolute -top-10 -left-10 w-40 h-40 rounded-full blur-3xl opacity-30", activeSection.color)} />
-                  <div className={cn("absolute -bottom-10 -right-10 w-40 h-40 rounded-full blur-3xl opacity-30", activeSection.color)} />
+                  <div className={cn("absolute -top-10 -left-10 w-48 h-48 rounded-full blur-3xl opacity-20", activeSection.color)} />
+                  <div className={cn("absolute -bottom-10 -right-10 w-48 h-48 rounded-full blur-3xl opacity-20", activeSection.color)} />
                 </div>
               )}
 
-              {/* Bottom: Information */}
-              <div className="space-y-8 w-full">
+              {/* Bottom: Information (Always below) */}
+              <div className="space-y-10 w-full">
                 <div className="space-y-2">
                   <span className={cn("px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-white", activeSection.color)}>
                     {activeSection.title}
