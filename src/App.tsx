@@ -115,15 +115,12 @@ export default function App() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className={cn(
-                "grid gap-12 items-center",
-                activeSubsection.image ? "lg:grid-cols-2" : "max-w-3xl mx-auto"
-              )}
+              className="flex flex-col gap-12 items-center max-w-4xl mx-auto w-full"
             >
-              {/* Left Column: Visuals (Conditional) */}
+              {/* Top: Visuals (Conditional) */}
               {activeSubsection.image && (
-                <div className="relative">
-                  <div className="relative aspect-video lg:aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
+                <div className="relative w-full">
+                  <div className="relative aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
                     <img 
                       src={activeSubsection.image} 
                       alt={activeSubsection.title}
@@ -141,8 +138,8 @@ export default function App() {
                 </div>
               )}
 
-              {/* Right Column: Information */}
-              <div className="space-y-8">
+              {/* Bottom: Information */}
+              <div className="space-y-8 w-full">
                 <div className="space-y-2">
                   <span className={cn("px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-white", activeSection.color)}>
                     {activeSection.title}
