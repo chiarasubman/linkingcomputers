@@ -65,26 +65,26 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Telecommunications is the exchange of information over significant distances by electronic means. A basic system consists of three main parts: a transmitter that takes information and converts it to a signal, a transmission medium (the "physical channel"), and a receiver that takes the signal from the channel and converts it back into usable information.'
+            text: 'Telecommunications is just a fancy word for sending messages over long distances using technology. Think of it like a conversation: you need someone to send the message (the sender), a way for the message to travel (like a wire or the air), and someone to get the message (the receiver).'
           },
           {
             type: 'list',
-            title: 'Core Components:',
+            title: 'How it works:',
             items: [
-              { label: 'Transmitter', description: 'Converts the message into a signal suitable for the transmission medium (e.g., a microphone or a modem).' },
-              { label: 'Channel', description: 'The physical path between the transmitter and receiver (e.g., copper wire, fiber optics, or radio waves).' },
-              { label: 'Receiver', description: 'Extracts the original message from the received signal (e.g., a speaker or a computer screen).' },
-              { label: 'Amplifier/Repeater', description: 'Devices used to boost signal strength over long distances to prevent degradation.' }
+              { label: 'Sender', description: 'The device that starts the message, like your phone or a computer.' },
+              { label: 'Path', description: 'The road the message takes, which can be a cable or invisible waves in the air.' },
+              { label: 'Receiver', description: 'The device that gets the message and shows it to you.' },
+              { label: 'Booster', description: 'A tool that makes the signal stronger so it can travel very far without getting lost.' }
             ]
           },
           {
             type: 'grid',
-            title: 'Communication Modes',
+            title: 'Ways to talk',
             items: [
-              { label: 'Simplex', description: 'One-way communication only (e.g., traditional radio or television broadcasting).' },
-              { label: 'Half-Duplex', description: 'Two-way communication, but only one direction at a time (e.g., walkie-talkies).' },
-              { label: 'Full-Duplex', description: 'Simultaneous two-way communication (e.g., a standard telephone call).' },
-              { label: 'Multiplexing', description: 'Technique that allows multiple signals to share a single communication channel.' }
+              { label: 'One-way', description: 'Like a TV or radio: you listen, but you can\'t talk back.' },
+              { label: 'One at a time', description: 'Like a walkie-talkie: you take turns speaking.' },
+              { label: 'Both ways', description: 'Like a normal phone call: you can both talk at the same time.' },
+              { label: 'Sharing', description: 'A trick that lets many people use the same "road" at once.' }
             ]
           }
         ]
@@ -98,22 +98,22 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Data transmission involves the physical transfer of data over a point-to-point or point-to-multipoint communication channel. The way data is synchronized between the sender and receiver is crucial for accuracy.'
+            text: 'Sending data is like sending a letter. For the message to make sense, the sender and the receiver need to be "in sync" so they don\'t mix up the pieces of information.'
           },
           {
             type: 'list',
-            title: 'Synchronization Types:',
+            title: 'Staying in Sync:',
             items: [
-              { label: 'Synchronous', description: 'Data is sent in a continuous stream at a constant rate. Both sender and receiver are synchronized by a clock signal.' },
-              { label: 'Asynchronous', description: 'Data is sent in small blocks (bytes) with start and stop bits. No continuous synchronization is required.' }
+              { label: 'Continuous', description: 'Data flows like a steady stream of water. Both sides follow a strict timer.' },
+              { label: 'Stop & Go', description: 'Data is sent in small chunks with "start" and "stop" signs, so no constant timer is needed.' }
             ]
           },
           {
             type: 'grid',
-            title: 'Switching Techniques',
+            title: 'How messages travel',
             items: [
-              { label: 'Circuit Switching', description: 'Establishes a dedicated physical path between two nodes for the duration of the session (e.g., PSTN).' },
-              { label: 'Packet Switching', description: 'Breaks data into small packets that are routed independently across the network (e.g., The Internet).' }
+              { label: 'Direct Line', description: 'Like a private phone line that stays open just for you while you talk.' },
+              { label: 'Postal Style', description: 'The message is broken into small "envelopes" that find their own way to the destination.' }
             ]
           }
         ]
@@ -127,23 +127,23 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Wireless communication uses electromagnetic waves (radio, infrared, or microwave) to carry signals over a distance without the use of physical wires.'
+            text: 'Wireless means sending signals through the air using invisible waves, like radio or light, instead of using physical cables.'
           },
           {
             type: 'grid',
-            title: 'Short-Range Technologies',
+            title: 'Short Distance',
             items: [
-              { label: 'Wi-Fi (802.11)', description: 'Uses radio waves to provide high-speed internet and network access within a limited range (WLAN).' },
-              { label: 'Bluetooth', description: 'A low-power wireless technology for exchanging data over very short distances (WPAN).' },
-              { label: 'NFC', description: 'Near Field Communication for very close range interactions like contactless payments.' }
+              { label: 'Wi-Fi', description: 'The most common way to get high-speed internet at home or in a café.' },
+              { label: 'Bluetooth', description: 'Used to connect things very close by, like your headphones to your phone.' },
+              { label: 'Tap to Pay', description: 'Technology that lets you pay just by touching your card or phone to a reader.' }
             ]
           },
           {
             type: 'list',
-            title: 'Mobile Generations',
+            title: 'Mobile Internet',
             items: [
-              { label: '4G LTE', description: 'Long Term Evolution, providing high-speed mobile broadband for smartphones and tablets.' },
-              { label: '5G', description: 'The latest generation, offering ultra-low latency, massive capacity, and multi-Gbps peak data speeds.' }
+              { label: '4G', description: 'The standard fast internet we use on our phones every day.' },
+              { label: '5G', description: 'The newest and fastest mobile internet, designed to be super quick with no delays.' }
             ]
           }
         ]
@@ -157,23 +157,23 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'A computer network is a set of computers sharing resources located on or provided by network nodes. The nodes use common communication protocols over digital interconnections.'
+            text: 'A computer network is just a group of computers connected together so they can share things, like files, printers, or an internet connection.'
           },
           {
             type: 'grid',
-            title: 'Network Architectures',
+            title: 'Who is in charge?',
             items: [
-              { label: 'Client-Server', description: 'A central server provides resources or services to multiple client computers.' },
-              { label: 'Peer-to-Peer (P2P)', description: 'Each computer acts as both a client and a server, sharing resources directly.' }
+              { label: 'Boss & Workers', description: 'One main computer (the server) provides everything to the others (the clients).' },
+              { label: 'Equal Partners', description: 'Every computer shares directly with the others, with no one in charge.' }
             ]
           },
           {
             type: 'list',
-            title: 'Hardware Essentials',
+            title: 'The Tools Needed:',
             items: [
-              { label: 'Router', description: 'A device that forwards data packets between computer networks, acting as a gateway.' },
-              { label: 'Switch', description: 'Connects devices within a single network (LAN) and uses MAC addresses to forward data.' },
-              { label: 'Modem', description: 'Modulates and demodulates signals to bridge digital data with analog transmission media.' }
+              { label: 'Router', description: 'The "traffic cop" that directs data between different networks.' },
+              { label: 'Switch', description: 'Connects devices inside your house or office so they can talk to each other.' },
+              { label: 'Modem', description: 'The bridge that connects your home network to the outside internet.' }
             ]
           }
         ]
@@ -187,16 +187,16 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Networks are often categorized by their geographical span. From personal devices to global connections, the scale determines the technology and protocols used.'
+            text: 'Networks are named based on how much area they cover. It can be as small as your desk or as big as the whole planet.'
           },
           {
             type: 'grid',
             items: [
-              { label: 'PAN', description: 'Personal Area Network: Centered around an individual (e.g., Bluetooth devices).' },
-              { label: 'LAN', description: 'Local Area Network: Covers a small area like a home, office, or school building.' },
-              { label: 'MAN', description: 'Metropolitan Area Network: Spans a city or a large campus.' },
-              { label: 'WAN', description: 'Wide Area Network: Covers large distances, such as countries or continents (e.g., The Internet).' },
-              { label: 'GAN', description: 'Global Area Network: A network composed of different interconnected networks that cover the entire globe.' }
+              { label: 'Personal', description: 'Just for you, like connecting your watch to your phone.' },
+              { label: 'Local', description: 'Covers a small place like your home, office, or school.' },
+              { label: 'City-wide', description: 'Covers a whole city or a very large campus.' },
+              { label: 'Wide', description: 'Covers huge distances, like countries (the Internet is the biggest one).' },
+              { label: 'Global', description: 'A massive web that connects everything around the world.' }
             ]
           }
         ]
@@ -210,16 +210,16 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Topology describes the arrangement of nodes and links in a network. It can be physical (the actual layout of cables) or logical (how data flows).'
+            text: 'Topology is just a fancy word for how computers are physically or logically laid out in a network.'
           },
           {
             type: 'grid',
             items: [
-              { label: 'Star', description: 'All nodes connect to a central hub. If the hub fails, the whole network goes down.' },
-              { label: 'Bus', description: 'All nodes share a single backbone cable. Simple but difficult to troubleshoot.' },
-              { label: 'Ring', description: 'Each node connects to two others, forming a loop. Data travels in one direction.' },
-              { label: 'Mesh', description: 'Nodes are interconnected. Full mesh means every node connects to every other node.' },
-              { label: 'Tree', description: 'A hierarchical structure that combines star and bus topologies.' }
+              { label: 'Star', description: 'Everything connects to a middle hub, like the points of a star.' },
+              { label: 'Line', description: 'All computers are connected to one long main cable.' },
+              { label: 'Circle', description: 'Computers are connected in a loop, passing info around.' },
+              { label: 'Web', description: 'Everything is connected to everything else for extra safety.' },
+              { label: 'Tree', description: 'A mix of star and line layouts, looking like branches.' }
             ]
           }
         ]
@@ -233,19 +233,19 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'The Open Systems Interconnection (OSI) model is a conceptual framework used to understand and standardize the functions of a telecommunication or computing system.'
+            text: 'The OSI model is like a set of rules that helps different computers talk to each other by breaking the process into 7 simple steps.'
           },
           {
             type: 'list',
-            title: 'The Seven Layers:',
+            title: 'The 7 Steps:',
             items: [
-              { label: '1. Physical', description: 'Transmission of raw bit streams over a physical medium.' },
-              { label: '2. Data Link', description: 'Reliable transmission of data frames between two nodes.' },
-              { label: '3. Network', description: 'Structuring and managing a multi-node network, including addressing and routing.' },
-              { label: '4. Transport', description: 'End-to-end communication, reliability, and flow control.' },
-              { label: '5. Session', description: 'Managing sessions between applications.' },
-              { label: '6. Presentation', description: 'Data translation, encryption, and compression.' },
-              { label: '7. Application', description: 'High-level APIs and network services (HTTP, FTP, SMTP).' }
+              { label: '1. Physical', description: 'The actual wires and signals.' },
+              { label: '2. Connection', description: 'Making sure the data gets to the next device safely.' },
+              { label: '3. Routing', description: 'Finding the best path for the data to travel.' },
+              { label: '4. Transport', description: 'Checking that the whole message arrived correctly.' },
+              { label: '5. Session', description: 'Starting and stopping the conversation.' },
+              { label: '6. Format', description: 'Translating the data so both sides understand it.' },
+              { label: '7. App', description: 'What you see, like your web browser or email.' }
             ]
           }
         ]
@@ -259,25 +259,25 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'TCP/IP is the suite of communication protocols used to interconnect network devices on the internet. It is more practical than the OSI model and has four layers.'
+            text: 'TCP/IP is the actual set of rules the Internet uses. It\'s a simpler version of the OSI model with only 4 layers.'
           },
           {
             type: 'grid',
-            title: 'Core Protocols',
+            title: 'Main Rules',
             items: [
-              { label: 'TCP', description: 'Transmission Control Protocol: Ensures reliable, ordered, and error-checked delivery of data.' },
-              { label: 'IP', description: 'Internet Protocol: Responsible for addressing and routing packets to their destination.' },
-              { label: 'UDP', description: 'User Datagram Protocol: A faster, connectionless alternative to TCP for time-sensitive data.' }
+              { label: 'TCP', description: 'Makes sure every piece of data arrives in the right order and without errors.' },
+              { label: 'IP', description: 'The "address" system that makes sure data gets to the right computer.' },
+              { label: 'UDP', description: 'A faster way to send data when speed is more important than perfect accuracy (like video calls).' }
             ]
           },
           {
             type: 'list',
-            title: 'The 4 Layers of TCP/IP:',
+            title: 'The 4 Layers:',
             items: [
-              { label: 'Application', description: 'Where network apps live (HTTP, DNS, SSH).' },
-              { label: 'Transport', description: 'Host-to-host communication (TCP, UDP).' },
-              { label: 'Internet', description: 'Routing packets across networks (IP, ICMP).' },
-              { label: 'Network Access', description: 'Physical and data link functions (Ethernet, Wi-Fi).' }
+              { label: 'Apps', description: 'The programs you use (Web, Email).' },
+              { label: 'Delivery', description: 'Handling the conversation (TCP/UDP).' },
+              { label: 'Internet', description: 'Finding the right address (IP).' },
+              { label: 'Physical', description: 'The actual cables and Wi-Fi.' }
             ]
           }
         ]
@@ -298,15 +298,15 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'The Internet is a global network of billions of computers and other electronic devices. With the Internet, it’s possible to access almost any information, communicate with anyone else in the world, and do much more.'
+            text: 'The Internet is a massive, worldwide web of billions of computers and gadgets. It lets you find almost any information, talk to anyone, and do things like shopping or banking from anywhere.'
           },
           {
             type: 'list',
-            title: 'Key Infrastructure:',
+            title: 'The Backbone:',
             items: [
-              { label: 'ISP', description: 'Internet Service Provider: A company that provides individuals and organizations access to the Internet.' },
-              { label: 'Backbone', description: 'The high-speed fiber-optic data trunks that connect major network hubs around the world.' },
-              { label: 'DNS', description: 'Domain Name System: Translates domain names (like google.com) into IP addresses.' }
+              { label: 'ISP', description: 'The company you pay to get internet at home, like your phone provider.' },
+              { label: 'Main Lines', description: 'Super-fast cables that connect different parts of the world underground or under the sea.' },
+              { label: 'DNS', description: 'The "phonebook" of the internet that turns names like google.com into numbers computers understand.' }
             ]
           }
         ]
@@ -320,23 +320,23 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'The World Wide Web (WWW) is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs). It was invented by Tim Berners-Lee in 1989.'
+            text: 'The World Wide Web is the collection of pages and websites you see when you go online. It was created in 1989 to help people share information easily.'
           },
           {
             type: 'grid',
-            title: 'Web Technologies',
+            title: 'Web Basics',
             items: [
-              { label: 'HTML', description: 'HyperText Markup Language: The standard language for creating web pages.' },
-              { label: 'HTTP/HTTPS', description: 'The protocol used to transfer data over the web. HTTPS adds encryption.' },
-              { label: 'URL', description: 'Uniform Resource Locator: The global address of a resource on the web.' }
+              { label: 'HTML', description: 'The basic code used to build every web page.' },
+              { label: 'HTTP/HTTPS', description: 'The rules for moving data on the web. The "S" means it\'s secure and private.' },
+              { label: 'URL', description: 'The unique address of a web page, like a home address.' }
             ]
           },
           {
             type: 'list',
-            title: 'Web Browsers:',
+            title: 'Browsers:',
             items: [
-              { label: 'Rendering Engine', description: 'The part of the browser that interprets HTML/CSS and draws the page.' },
-              { label: 'JavaScript Engine', description: 'Executes scripts to make web pages interactive (e.g., V8 in Chrome).' }
+              { label: 'Drawing Tool', description: 'The part of your browser that reads code and shows you the actual page.' },
+              { label: 'Action Tool', description: 'The part that makes buttons work and pages interactive.' }
             ]
           }
         ]
@@ -350,15 +350,15 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Search engines are software systems designed to carry out web searches. They provide a searchable interface for the massive amount of data on the World Wide Web.'
+            text: 'Search engines are like super-smart librarians. They help you find exactly what you\'re looking for among billions of web pages.'
           },
           {
             type: 'grid',
             title: 'How they work:',
             items: [
-              { label: 'Crawling', description: 'Spiders or bots systematically browse the web to find new and updated content.' },
-              { label: 'Indexing', description: 'The process of adding web pages into a massive database for quick retrieval.' },
-              { label: 'Ranking', description: 'Algorithms determine which pages are most relevant to a user\'s query.' }
+              { label: 'Exploring', description: 'Automated programs that constantly browse the web to find new pages.' },
+              { label: 'Organizing', description: 'Saving all those pages in a giant digital library so they can be searched quickly.' },
+              { label: 'Picking', description: 'Using smart rules to show you the most helpful results first.' }
             ]
           }
         ]
@@ -372,14 +372,14 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Content aggregation is the process of collecting information from various sources on the web and presenting it in one place for easy consumption.'
+            text: 'Content aggregators collect information from many different places and put it all in one spot so you don\'t have to go looking for it.'
           },
           {
             type: 'list',
             items: [
-              { label: 'RSS Feeds', description: 'Really Simple Syndication: Allows users to subscribe to updates from websites.' },
-              { label: 'News Aggregators', description: 'Services like Google News that compile headlines from thousands of sources.' },
-              { label: 'Social Bookmarking', description: 'Platforms where users share and categorize web links (e.g., Reddit, Pinterest).' }
+              { label: 'Updates', description: 'A way to get the latest news from your favorite sites automatically.' },
+              { label: 'News Apps', description: 'Services that show you headlines from many different newspapers at once.' },
+              { label: 'Saving Links', description: 'Places where people share and organize interesting things they find online.' }
             ]
           }
         ]
@@ -393,15 +393,15 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user.'
+            text: 'Cloud computing means using the internet to store files or run programs instead of using your own computer\'s hard drive.'
           },
           {
             type: 'grid',
-            title: 'Service Models',
+            title: 'Types of Cloud',
             items: [
-              { label: 'IaaS', description: 'Infrastructure as a Service: Provides virtualized computing resources over the internet (e.g., AWS EC2).' },
-              { label: 'PaaS', description: 'Platform as a Service: Provides a platform for developers to build and run apps (e.g., Heroku).' },
-              { label: 'SaaS', description: 'Software as a Service: Delivers software apps over the internet (e.g., Google Workspace, Netflix).' }
+              { label: 'Rent a Computer', description: 'Renting powerful computers and storage online (like Amazon\'s cloud).' },
+              { label: 'Build an App', description: 'Tools for developers to create and run their own apps online.' },
+              { label: 'Use an App', description: 'Using apps directly in your browser, like Gmail, Netflix, or Google Docs.' }
             ]
           }
         ]
@@ -415,15 +415,15 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Collaboration tools allow multiple users to work on the same document or project simultaneously, regardless of their physical location.'
+            text: 'These tools let many people work on the same project at the same time, even if they are in different countries.'
           },
           {
             type: 'list',
             title: 'Features:',
             items: [
-              { label: 'Real-time Editing', description: 'Changes made by one user are instantly visible to all others.' },
-              { label: 'Version Control', description: 'The ability to track changes and revert to previous versions if needed.' },
-              { label: 'Wikis', description: 'Websites that allow users to collaboratively create and edit content (e.g., Wikipedia).' }
+              { label: 'Live Editing', description: 'You can see other people typing and making changes as they happen.' },
+              { label: 'History', description: 'The ability to see old versions of a document and go back if you make a mistake.' },
+              { label: 'Wikis', description: 'Websites where anyone can add or change information, like Wikipedia.' }
             ]
           }
         ]
@@ -444,15 +444,15 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Social networking is the use of internet-based social media sites to stay connected with friends, family, colleagues, or customers. It is a key part of the "Web 2.0" revolution.'
+            text: 'Social networks are websites and apps that help you stay in touch with friends, family, and people who share your interests.'
           },
           {
             type: 'grid',
             title: 'Types of Networks',
             items: [
-              { label: 'Personal', description: 'Platforms like Facebook or Instagram for personal connections.' },
-              { label: 'Professional', description: 'Networks like LinkedIn for career development and networking.' },
-              { label: 'Niche', description: 'Communities focused on specific interests (e.g., Goodreads for book lovers).' }
+              { label: 'Friends & Family', description: 'Places like Facebook or Instagram for sharing your daily life.' },
+              { label: 'Work & Career', description: 'Sites like LinkedIn for finding jobs and professional connections.' },
+              { label: 'Special Interests', description: 'Groups for people who love specific things, like books, games, or cooking.' }
             ]
           }
         ]
@@ -466,13 +466,13 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Blogs and forums were some of the earliest forms of social interaction on the web, allowing users to share thoughts and engage in discussions.'
+            text: 'Blogs and forums were some of the first ways people talked to each other online, sharing stories and answering questions.'
           },
           {
             type: 'grid',
             items: [
-              { label: 'Blogs', description: 'Regularly updated websites or web pages, typically run by an individual or small group.' },
-              { label: 'Forums', description: 'Online discussion sites where people can hold conversations in the form of posted messages.' }
+              { label: 'Blogs', description: 'Online journals where people write about their lives or hobbies.' },
+              { label: 'Forums', description: 'Message boards where people discuss specific topics and help each other.' }
             ]
           }
         ]
@@ -486,15 +486,15 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Multimedia sharing platforms allow users to upload, store, and share digital media like photos, music, and videos with a global audience.'
+            text: 'These platforms let you share your photos, music, and videos with the whole world or just a few friends.'
           },
           {
             type: 'list',
-            title: 'Methods:',
+            title: 'How we share:',
             items: [
-              { label: 'Streaming Services', description: 'Platforms like YouTube, Spotify, and Netflix that deliver content in real-time.' },
-              { label: 'File Hosting', description: 'Services like Dropbox or Google Drive for storing and sharing large files.' },
-              { label: 'P2P Sharing', description: 'Direct file exchange between users (e.g., BitTorrent).' }
+              { label: 'Streaming', description: 'Watching or listening instantly without downloading, like YouTube or Spotify.' },
+              { label: 'Cloud Storage', description: 'Keeping your files online so you can share them easily, like Google Drive.' },
+              { label: 'Direct Sharing', description: 'Sending files directly from one person to another.' }
             ]
           }
         ]
@@ -508,13 +508,13 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Smart TVs integrate internet connectivity and interactive features into traditional television sets, allowing for on-demand content and apps.'
+            text: 'Smart TVs are televisions that can connect to the internet, letting you watch movies and shows whenever you want.'
           },
           {
             type: 'grid',
             items: [
-              { label: 'VOD', description: 'Video on Demand: Allows users to watch content whenever they choose.' },
-              { label: 'IPTV', description: 'Internet Protocol Television: Delivering television content over IP networks.' }
+              { label: 'On Demand', description: 'Watching what you want, when you want, instead of following a schedule.' },
+              { label: 'Internet TV', description: 'Watching normal TV channels through your internet connection.' }
             ]
           }
         ]
@@ -528,14 +528,14 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'VoIP technology allows you to make voice calls using a broadband internet connection instead of a regular (analog) phone line.'
+            text: 'These technologies let you make phone and video calls using the internet instead of old-fashioned phone lines.'
           },
           {
             type: 'list',
-            title: 'Key Benefits:',
+            title: 'Why use it:',
             items: [
-              { label: 'Cost Savings', description: 'Significantly cheaper than traditional long-distance phone calls.' },
-              { label: 'Rich Features', description: 'Includes video calling, screen sharing, and file transfers (e.g., Zoom, Microsoft Teams).' }
+              { label: 'Cheaper', description: 'Calls are often free or much cheaper, especially for long distances.' },
+              { label: 'More Features', description: 'You can see the person, share your screen, and send files while talking.' }
             ]
           }
         ]
@@ -549,13 +549,13 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Instant messaging (IM) is a type of online chat that offers real-time text transmission over the internet. Microblogging is a broadcast medium that exists in the form of blogging.'
+            text: 'Instant messaging is for quick, real-time chats. Microblogging is for sharing short public updates with everyone.'
           },
           {
             type: 'grid',
             items: [
-              { label: 'IM Apps', description: 'WhatsApp, Telegram, and Signal for private and group messaging.' },
-              { label: 'Microblogging', description: 'Platforms like X (formerly Twitter) for short, public updates.' }
+              { label: 'Chat Apps', description: 'Apps like WhatsApp or Telegram for private and group messages.' },
+              { label: 'Short Updates', description: 'Platforms like X (Twitter) for sharing quick thoughts with the world.' }
             ]
           }
         ]
@@ -569,15 +569,15 @@ export const presentationSections: Section[] = [
         content: [
           {
             type: 'text',
-            text: 'Mobile applications (apps) are software designed to run on smartphones and tablets. Widgets are small, self-contained apps that run on a home screen or dashboard.'
+            text: 'Apps are programs made for your phone. Widgets are tiny apps that sit on your home screen to show you quick info like the weather.'
           },
           {
             type: 'grid',
             title: 'App Types',
             items: [
-              { label: 'Native Apps', description: 'Developed specifically for a mobile operating system (iOS or Android).' },
-              { label: 'Web Apps', description: 'Responsive websites that look and feel like apps but run in a browser.' },
-              { label: 'Hybrid Apps', description: 'A combination of native and web technologies.' }
+              { label: 'Phone Apps', description: 'Apps built specifically for your iPhone or Android phone.' },
+              { label: 'Web Apps', description: 'Websites that act like apps but run in your browser.' },
+              { label: 'Mix Apps', description: 'A mix of both phone and web technology.' }
             ]
           }
         ]
